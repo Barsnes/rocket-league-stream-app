@@ -18,7 +18,7 @@ import Link from 'next/link'
 
 export default function navbar() {
   return (
-    <div>
+    <div className='bg-gray-900'>
       <div className='border-b'>
         <div className='flex h-16 items-center px-4'>
           <nav className={cn('flex items-center space-x-4 lg:space-x-6', 'mx-6')}>
@@ -30,12 +30,6 @@ export default function navbar() {
               className='text-sm font-medium transition-colors hover:text-primary'
             >
               Create match
-            </Link>
-            <Link
-              href='/match/view'
-              className='text-sm font-medium transition-colors hover:text-primary'
-            >
-              View match
             </Link>
           </nav>
           <div className='ml-auto flex items-center space-x-4'>
