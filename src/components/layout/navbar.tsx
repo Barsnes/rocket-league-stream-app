@@ -11,6 +11,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setCurrentPath(window.location.pathname)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [window.location.pathname])
 
   return (
