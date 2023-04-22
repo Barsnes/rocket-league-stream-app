@@ -1,18 +1,18 @@
-'use client'
-
 import React, { useEffect, useState } from 'react'
 import { cn } from '@/lib/utils'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function Navbar() {
   const [currentPath, setCurrentPath] = useState('')
 
+  const router = useRouter()
+
   useEffect(() => {
-    setCurrentPath(window.location.pathname)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [window.location.pathname])
+    setCurrentPath(router.route)
+  }, [router])
 
   return (
     <div className='bg-gray-900'>
