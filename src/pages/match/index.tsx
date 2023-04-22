@@ -56,7 +56,7 @@ export default function index() {
           </form>
         </CardContent>
       </Card>
-      <div className='flex flex-row gap-5 w-[100%]'>
+      <div className='flex flex-row gap-5 w-[100%] flex-wrap sm:flex-nowrap'>
         <Card className='w-[100%]'>
           <CardHeader>
             <CardTitle>Blue Team</CardTitle>

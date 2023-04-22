@@ -60,7 +60,9 @@ export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <Navbar />
-      <main className={`flex px-16 py-6 ${inter.className}`}>{children}</main>
+      <main className={`flex px-5 py-6 xl:px-56 xs:px-5 md:px-16 ${inter.className}`}>
+        {children}
+      </main>
     </>
   )
 }
